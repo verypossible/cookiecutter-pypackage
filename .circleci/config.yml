@@ -1,0 +1,25 @@
+version: 2
+
+dependencies: &install-dependencies
+  name: Install Python dependencies
+  command: pipenv sync --dev
+
+tests: &run-tests
+  name: Run tests
+  command: pipenv run pytest
+
+jobs:
+  build:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/python:3.6.4
+    steps:
+      - checkout
+      - run: *install-dependencies
+      - run: *run-tests
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build

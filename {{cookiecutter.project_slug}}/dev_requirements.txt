@@ -1,0 +1,8 @@
+isort
+flake8
+pytest
+pytest-cov
+pytest-watch
+twine
+yapf
+-r requirements.txt
