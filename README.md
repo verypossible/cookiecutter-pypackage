@@ -1,7 +1,8 @@
 Very PyPackage
 ======================
 Minimal [cookiecutter](https://github.com/audreyr/cookiecutter) template for
-Very-style Python packages.
+Very-style Python packages, forked from
+[cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
 -   Free software: BSD license
 
 Features
